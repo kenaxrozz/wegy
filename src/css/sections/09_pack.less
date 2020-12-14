@@ -1,0 +1,59 @@
+.pack {
+    padding: 20px 0;
+
+    &-items {
+        .row-flex();
+    }
+
+    &-item {
+        .col();
+        .size(4);
+        .size-md(12);
+        .md-block({
+            margin: 0 auto 50px;
+            max-width: 500px;
+
+        });
+        background-color: @color-bg;
+
+        &__title {
+            font-size: 22px;
+            color: @color_dark;
+        }
+
+        &__price {
+            padding: 15px 0;
+            background-color: @color_green;
+            font-size: 40px;
+            text-align: center;
+            color: @color_white;
+
+            sup {
+                font-size: 26px;
+            }
+
+            sub {
+                font-size: 16px;
+            }
+        }
+
+        &__list {
+            max-width: max-content;
+            margin: 0 auto;
+            &-item {
+                padding: 10px 0;
+                color: @color_middle;
+            }
+
+            &-img {
+                margin-left: 10px;
+                margin-right: 10px;
+                color: @color_green;
+                &-cross {
+                    color: @color_dark;
+                }
+            }
+
+        }
+    }
+}

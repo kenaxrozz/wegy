@@ -1,0 +1,79 @@
+html,
+body {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+	color: #000000;
+	text-align: center;
+}
+
+h2,
+.h2 {
+	font-size: 35px;
+	margin: 32px 0;
+}
+
+
+.btn {
+	display: inline-block;
+	padding: 12px 51px;
+	cursor: pointer;
+	border-radius: 20px;
+	font-size: 18px;
+}
+
+.btn-green {
+	background-color: @color_green;
+	color: #ffffff;
+	border: 1px solid @color_green;
+
+	&:hover {
+		border: 1px solid #ffffff;
+		color:#ffffff;
+		background-color: transparent;
+	}
+}
+
+.btn-white {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	&:hover {
+		border: 1px solid @color_green;
+		color: #ffffff;
+		background-color: @color_green;
+	}
+}
+
+li {
+	list-style-type: none;
+	/* Убираем маркеры */
+}
+a{
+	text-decoration: none;
+}
+
+.red{
+	color: rgb(24, 47, 180);
+}

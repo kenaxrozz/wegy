@@ -1,0 +1,78 @@
+.advantages {
+	max-width: 2048px;
+	margin: 0 auto;
+}
+
+.advItems {
+	.row-flex();
+	justify-content: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.advItem {
+	.col();
+	margin-left: 0;
+	margin-right: 0;
+	.size(4);
+	@offset: 0px;
+	width: calc(100%/12*4 - @offset);
+	
+	.size-md(12);
+	.md-block({
+		width: calc(100% - @offset);
+	});
+
+	box-sizing: border-box;
+	color: @color_white;
+	text-align: center;
+	padding: 70px 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&-left {
+		background-color: #1fa87a;
+	}
+	&-middle {
+		background-color: @color_green;
+	}
+
+	&-right {
+		background-color: #1b936c;
+	}
+
+	&__title {
+		font-size: 25px;
+		margin: 20px 0 15px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 23px;
+		margin-bottom: 30px;
+		max-width: 100%;	// Для IE 11
+		.md-block({
+			max-width: 400px;
+		})
+	}
+
+	&__icon {
+		height: 66px;
+		&-small {
+			height: 58px;
+			margin-top: 8px;
+		}
+	}
+	&__btn {
+		&:extend(.shadow);
+
+		transition: background 0.3s, color 0.3s;
+		margin-top: auto;
+		&:hover {
+			background: @color_white;
+			color: #1d9d73;
+		}
+	}
+}
+
